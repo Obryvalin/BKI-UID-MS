@@ -26,8 +26,8 @@ const query = (sql,callback)=>{
 };
 
 const init = (callback)=>{
-    query("DROP TABLE IF EXISTS UUIDS",()=>{
-        query("CREATE TABLE UUIDS (applicationNumber character varying(50),creditNumber character varying (50),UUID character varying(38))",()=>{
+    query("DROP TABLE IF EXISTS BKIUIDS",()=>{
+        query("CREATE TABLE BKIUIDS (applicationNumber character varying(50),creditNumber character varying (50),UUID character varying(38))",()=>{
             log.timestamp("Init complete");
             callback();
         })

@@ -1,5 +1,5 @@
 const express = require('express');
-const bkiUID = require("./src/bkiUID.js");
+const BKIUID = require("./src/BKIUID.js");
 const log = require ("./src/log");
 
 
@@ -8,16 +8,33 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 
+// GET
+
+app.get('/checkBKIUID/:UID',(req,res)=>{
+    
+    UID = req.params.UID || req.body.UID;
+
+    if (!UID){
+        res.send({error:"No UID"})
+    }
+    
+    res.send({BKIUID:UID,result:BKIUID.checkBKIUID(UID)})
+    
+    
+})
+
+
+// POST
 
 app.post('/getBKIUID',(req,res)=>{
     if (!req.body.applicationNumber && !req.body.creditNumber){
-        res.send({Error:"Applicantion number or Credit Number requied"});
+        res.send({error:"Applicantion number or Credit Number requied"});
     }
     // log.timestamp ("Request:");
     // console.log(req.body);
-    bkiUID.cacheUUID(req.body.applicationNumber,req.body.creditNumber,(bkiUUID)=>{
+    BKIUID.cacheBKIUID(req.body.applicationNumber,req.body.creditNumber,(BKIUID)=>{
         let resJSON = {request:req.body,
-            uuid:bkiUUID}
+            BKIUID:BKIUID}
         // console.log(resJSON);
         res.send(resJSON);
     })
@@ -38,8 +55,8 @@ app.post('/getBKIUIDMany',(req,res)=>{
     requests.forEach((request)=>{
         
         if (request.applicationNumber || request.creditNumber){
-            bkiUID.cacheUUID(request.applicationNumber,request.creditNumber,(bkiUUID)=>{
-                resp = {applicationNumber:request.applicationNumber,creditNumber:request.creditNumber,bkiUUID};
+            BKIUID.cacheBKIUID(request.applicationNumber,request.creditNumber,(BKIUID)=>{
+                resp = {applicationNumber:request.applicationNumber,creditNumber:request.creditNumber,BKIUID};
                 resJSON.push(resp);
                 cnt++;
             })
@@ -59,17 +76,14 @@ app.post('/getBKIUIDMany',(req,res)=>{
     
      
 })
-app.get('/checkBKIUID',(req,res)=>{
-    let result;
-    res.send(result);
-})
+
 
 app.get('*',(req,res)=>{
-    res.send ("<h2>Генератор УИД БКИ</h2>\nВ соответствии с 758-П п.2\nUsage:\n - POST to /getUUID with {applicationNumber,creditNumber} JSON");
+    res.send ("<h2>Генератор УИД БКИ</h2>\nВ соответствии с 758-П п.2\nUsage:\n - POST to /getBKIUID with {applicationNumber,creditNumber} JSON");
 })
 
 app.post('*',(req,res)=>{
-    res.send ("<h2>Генератор УИД БКИ</h2>\nВ соответствии с 758-П п.2\nUsage:\n - POST to /getUUID with {applicationNumber,creditNumber} JSON");
+    res.send ("<h2>Генератор УИД БКИ</h2>\nВ соответствии с 758-П п.2\nUsage:\n - POST to /getBKIUID with {applicationNumber,creditNumber} JSON");
 })
 
 const launch = (port) => {
