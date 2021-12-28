@@ -13,17 +13,52 @@ app.post('/getBKIUID',(req,res)=>{
     if (!req.body.applicationNumber && !req.body.creditNumber){
         res.send({Error:"Applicantion number or Credit Number requied"});
     }
-    log.timestamp ("Request:");
-    console.log(req.body);
+    // log.timestamp ("Request:");
+    // console.log(req.body);
     bkiUID.cacheUUID(req.body.applicationNumber,req.body.creditNumber,(bkiUUID)=>{
         let resJSON = {request:req.body,
             uuid:bkiUUID}
-        console.log(resJSON);
+        // console.log(resJSON);
         res.send(resJSON);
     })
      
 })
 
+
+app.post('/getBKIUIDMany',(req,res)=>{
+    if (!req.body.requests){
+        res.send({Error:"Applicantion number or Credit Number requied"});
+    }
+    log.timestamp ("Request:");
+    // console.log(req.body);
+    let requests = req.body.requests;
+    let len = requests.length;
+    cnt = 0;
+    resJSON = [];
+    requests.forEach((request)=>{
+        
+        if (request.applicationNumber || request.creditNumber){
+            bkiUID.cacheUUID(request.applicationNumber,request.creditNumber,(bkiUUID)=>{
+                resp = {applicationNumber:request.applicationNumber,creditNumber:request.creditNumber,bkiUUID};
+                resJSON.push(resp);
+                cnt++;
+            })
+        }
+    })
+    manyInterval = setInterval(()=>{
+        log.timestamp(cnt + " / "+ len);
+        // console.log(resJSON);
+        if (cnt == len){
+            clearInterval(manyInterval);
+            // console.log(resJSON);
+            res.send(resJSON);
+        }
+       
+    },500);    
+        
+    
+     
+})
 app.get('/checkBKIUID',(req,res)=>{
     let result;
     res.send(result);

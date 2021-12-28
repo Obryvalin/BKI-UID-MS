@@ -37,39 +37,46 @@ const getBKIUUID = (callback)=>{
 
 
 const cacheUUID = (applicationNumber,creditNumber,callback) =>{
-
-    pgsql.query("select * from UUIDS where applicationNumber = '"+applicationNumber+"'",(err,res)=>{
-        if (applicationNumber && res && res.rows.length > 0){
-        log.timestamp("-- Found by applicationNumber");
-        if (creditNumber && !res.rows[0].creditNumber){
-            pgsql.query("UPDATE UUIDS set creditNumber = '"+creditNumber+"' where applicationNumber='"+applicationNumber+"'")
-        }
-        callback(res.rows[0].uuid);
+    pgsql.query("select * from UUIDS where applicationNumber = '"+applicationNumber+"' and creditNumber = '"+creditNumber+"'",(err,res)=>{
+        if (applicationNumber && creditNumber && res && res.rows.length > 0){
+            callback(res.rows[0].uuid);   
         }
         else{
-            log.timestamp("-- No applicatoinNumber in database...");
-            pgsql.query("select * from UUIDS where creditNumber = '"+creditNumber+"'",(err,res)=>{
-                if (creditNumber && res && res.rows.length > 0){
-                    log.timestamp("Found by creditNumber");
-                    if (applicationNumber && !res.rows[0].applicationNumber){
-                        pgsql.query("UPDATE UUIDS set applicationNumber = '"+applicationNumber+"' where creditNumber='"+creditNumber+"'")
-                    }
-                    callback (res.rows[0].uuid);
+            pgsql.query("select * from UUIDS where applicationNumber = '"+applicationNumber+"'",(err,res)=>{
+                if (applicationNumber && res && res.rows.length > 0){
+                // log.timestamp("-- Found by applicationNumber");
+                if (creditNumber && !res.rows[0].creditNumber){
+                    pgsql.query("UPDATE UUIDS set creditNumber = '"+creditNumber+"' where applicationNumber='"+applicationNumber+"'")
+                }
+                callback(res.rows[0].uuid);
                 }
                 else{
-                    log.timestamp("-- No creditNumber in database...");
-                    getBKIUUID((bkiUUID)=>{
-                        pgsql.query("Insert into UUIDS(applicationNumber,creditNumber,UUID) values('"+applicationNumber+"','"+creditNumber+"','"+bkiUUID+"')");
-                        callback (bkiUUID);
+                    // log.timestamp("-- No applicatoinNumber in database...");
+                    pgsql.query("select * from UUIDS where creditNumber = '"+creditNumber+"'",(err,res)=>{
+                        if (creditNumber && res && res.rows.length > 0){
+                            // log.timestamp("Found by creditNumber");
+                            if (applicationNumber && !res.rows[0].applicationNumber){
+                                pgsql.query("UPDATE UUIDS set applicationNumber = '"+applicationNumber+"' where creditNumber='"+creditNumber+"'")
+                            }
+                            callback (res.rows[0].uuid);
+                        }
+                        else{
+                            // log.timestamp("-- No creditNumber in database...");
+                            getBKIUUID((bkiUUID)=>{
+                                pgsql.query("Insert into UUIDS(applicationNumber,creditNumber,UUID) values('"+applicationNumber+"','"+creditNumber+"','"+bkiUUID+"')");
+                                callback (bkiUUID);
+                            })
+                        }
+                        
+                        
                     })
                 }
                 
-                
+        
             })
         }
-        
-
     })
+    
 }
 
 module.exports = {
