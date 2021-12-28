@@ -2,7 +2,7 @@ const {Pool} = require("pg");
 const fs = require("fs");
 const log = require('./log')
 
-const {PG_HOST,PG_PORT,PG_USER,PG_PASSWORD,PG_DATABASE} = process.env;
+const {PGHOST,PGPORT,PGUSER,PGPASSWORD,PGDATABASE} = process.env;
 const pgoptions = JSON.parse(fs.readFileSync("conf/pg.json").toString());
 
 pool = new Pool(pgoptions);

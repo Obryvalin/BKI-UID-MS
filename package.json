@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "init": "node src/init.js",
-    "test": "jest index.test.js"
+    "test": "jest"
   },
   "author": "Ilya Obryvalin",
   "license": "ISC",
