@@ -1,5 +1,5 @@
 const express = require('express');
-const bkiUID = require("./src/bkiUID");
+const bkiUID = require("./src/bkiUID.js");
 const log = require ("./src/log");
 
 
@@ -16,8 +16,7 @@ app.post('/getBKIUID',(req,res)=>{
     log.timestamp ("Request:");
     console.log(req.body);
     bkiUID.cacheUUID(req.body.applicationNumber,req.body.creditNumber,(bkiUUID)=>{
-        let resJSON = {applicationNumber:req.body.applicationNumber,
-            creditNumber:req.body.creditNumber,
+        let resJSON = {request:req.body,
             uuid:bkiUUID}
         console.log(resJSON);
         res.send(resJSON);

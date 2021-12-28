@@ -58,7 +58,7 @@ const cacheUUID = (applicationNumber,creditNumber,callback) =>{
                 }
                 else{
                     log.timestamp("-- No creditNumber in database...");
-                    bkiUID.getBKIUUID((bkiUUID)=>{
+                    getBKIUUID((bkiUUID)=>{
                         pgsql.query("Insert into UUIDS(applicationNumber,creditNumber,UUID) values('"+applicationNumber+"','"+creditNumber+"','"+bkiUUID+"')");
                         callback (bkiUUID);
                     })

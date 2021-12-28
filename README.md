@@ -10,9 +10,15 @@
 
 <h2>Требования:</h2>
 - NodeJS
+-- Express
+-- pg
+-- uuid
+-- chalk
+-- date-format
+-- Jest (dev-dep)
 - PostgreSQL
 
 <h2>Установка:</h2>
-1. Клонировать репу.
+1. Клонировать репу. npm i
 2. Создать в Postgres Базу Данных. Настроить conf\pg.json.
-3. npm run init
+3. npm run init 
