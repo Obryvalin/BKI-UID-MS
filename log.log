@@ -1,0 +1,272 @@
+
+[Tue Dec 28 2021 15:48:04 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] PG error: select * from UUIDS where ApplicationNumber = 'test1'
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] error: ���� ������ "UUID-MS" �� ����������
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] error: ���� ������ "UUID-MS" �� ����������
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] PG error: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	b4ff8240-67dd-11ec-8841-0f8289f33c21
+checkSum:	undefined
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','b4ff8240-67dd-11ec-8841-0f8289f33c21-undefined')
+[Tue Dec 28 2021 15:57:26 GMT+0300 (Москва, стандартное время)] error: ���� ������ "UUID-MS" �� ����������
+[Tue Dec 28 2021 16:36:05 GMT+0300 (Москва, стандартное время)] error: ошибка синтаксиса (примерное положение: "EXITS")
+[Tue Dec 28 2021 16:36:05 GMT+0300 (Москва, стандартное время)] PG error: DROP TABLE IF EXITS UUIDS
+[Tue Dec 28 2021 16:40:18 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:41:20 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:41:48 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:41:50 GMT+0300 (Москва, стандартное время)] e91f1c10-67e3-11ec-babe-c9048ad9e019
+[Tue Dec 28 2021 16:41:50 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	e91f1c10-67e3-11ec-babe-c9048ad9e019
+checkSum:	undefined
+[Tue Dec 28 2021 16:41:50 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','e91f1c10-67e3-11ec-babe-c9048ad9e019-undefined')
+[Tue Dec 28 2021 16:41:50 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:43:24 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	210ac0c0-67e4-11ec-babe-c9048ad9e019
+checkSum:	undefined
+[Tue Dec 28 2021 16:43:24 GMT+0300 (Москва, стандартное время)] 210ac0c0-67e4-11ec-babe-c9048ad9e019
+[Tue Dec 28 2021 16:43:24 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','210ac0c0-67e4-11ec-babe-c9048ad9e019-undefined')
+[Tue Dec 28 2021 16:43:24 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:43:56 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:43:59 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	36139460-67e4-11ec-ad35-a3a2c330e9f0
+checkSum:	undefined
+[Tue Dec 28 2021 16:43:59 GMT+0300 (Москва, стандартное время)] 3613946067e4-11ec-ad35-a3a2c330e9f0
+[Tue Dec 28 2021 16:43:59 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','36139460-67e4-11ec-ad35-a3a2c330e9f0-undefined')
+[Tue Dec 28 2021 16:43:59 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:44:50 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:44:53 GMT+0300 (Москва, стандартное время)] 55f27440-67e4-11ec-9809-6fe79a9d2602
+[Tue Dec 28 2021 16:44:53 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	55f27440-67e4-11ec-9809-6fe79a9d2602
+checkSum:	undefined
+[Tue Dec 28 2021 16:44:53 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','55f27440-67e4-11ec-9809-6fe79a9d2602-undefined')
+[Tue Dec 28 2021 16:44:53 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:45:16 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:45:18 GMT+0300 (Москва, стандартное время)] 64e079c0-67e4-11ec-b4cd-f17cf31999ef
+[Tue Dec 28 2021 16:45:18 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	64e079c0-67e4-11ec-b4cd-f17cf31999ef
+checkSum:	undefined
+[Tue Dec 28 2021 16:45:18 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','64e079c0-67e4-11ec-b4cd-f17cf31999ef-undefined')
+[Tue Dec 28 2021 16:45:18 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:50:42 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:50:45 GMT+0300 (Москва, стандартное время)] 27b5cb8067e511ecad97210163590714
+[Tue Dec 28 2021 16:50:45 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	27b5cb80-67e5-11ec-ad97-210163590714
+checkSum:	1115
+[Tue Dec 28 2021 16:50:45 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','27b5cb80-67e5-11ec-ad97-210163590714-1115')
+[Tue Dec 28 2021 16:50:45 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:53:07 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:53:14 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	806b7360-67e5-11ec-baba-396bc3ff16d4
+checkSum:	1294
+[Tue Dec 28 2021 16:53:14 GMT+0300 (Москва, стандартное время)] 806b736067e511ecbaba396bc3ff16d4
+[Tue Dec 28 2021 16:53:14 GMT+0300 (Москва, стандартное время)] PG error: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','806b7360-67e5-11ec-baba-396bc3ff16d4-1294')
+[Tue Dec 28 2021 16:53:14 GMT+0300 (Москва, стандартное время)] error: значение не умещается в тип character varying(38)
+[Tue Dec 28 2021 16:53:37 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 16:53:41 GMT+0300 (Москва, стандартное время)] 908bb75067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:41 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	908bb750-67e5-11ec-b6cc-d762de9485f1
+checkSum:	f
+[Tue Dec 28 2021 16:53:46 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	939ceef0-67e5-11ec-b6cc-d762de9485f1
+checkSum:	b
+[Tue Dec 28 2021 16:53:46 GMT+0300 (Москва, стандартное время)] 939ceef067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:46 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	93fb62a0-67e5-11ec-b6cc-d762de9485f1
+checkSum:	6
+[Tue Dec 28 2021 16:53:46 GMT+0300 (Москва, стандартное время)] 93fb62a067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:47 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	9447fc00-67e5-11ec-b6cc-d762de9485f1
+checkSum:	a
+[Tue Dec 28 2021 16:53:47 GMT+0300 (Москва, стандартное время)] 9447fc0067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:47 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	9493ab00-67e5-11ec-b6cc-d762de9485f1
+checkSum:	a
+[Tue Dec 28 2021 16:53:47 GMT+0300 (Москва, стандартное время)] 9493ab0067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:48 GMT+0300 (Москва, стандартное время)] 94d4d2b067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:48 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	94d4d2b0-67e5-11ec-b6cc-d762de9485f1
+checkSum:	0
+[Tue Dec 28 2021 16:53:48 GMT+0300 (Москва, стандартное время)] 95144cb067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:48 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	95144cb0-67e5-11ec-b6cc-d762de9485f1
+checkSum:	d
+[Tue Dec 28 2021 16:53:49 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	95557460-67e5-11ec-b6cc-d762de9485f1
+checkSum:	9
+[Tue Dec 28 2021 16:53:49 GMT+0300 (Москва, стандартное время)] 9555746067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:49 GMT+0300 (Москва, стандартное время)] 959dc80067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:49 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	959dc800-67e5-11ec-b6cc-d762de9485f1
+checkSum:	c
+[Tue Dec 28 2021 16:53:50 GMT+0300 (Москва, стандартное время)] 95eafda067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:50 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	95eafda0-67e5-11ec-b6cc-d762de9485f1
+checkSum:	2
+[Tue Dec 28 2021 16:53:50 GMT+0300 (Москва, стандартное время)] 962ff5e067e511ecb6ccd762de9485f1
+[Tue Dec 28 2021 16:53:50 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	962ff5e0-67e5-11ec-b6cc-d762de9485f1
+checkSum:	0
+[Tue Dec 28 2021 17:02:31 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:02:34 GMT+0300 (Москва, стандартное время)] cea5207067e611ec8b5e85afe693a895
+[Tue Dec 28 2021 17:02:34 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	cea52070-67e6-11ec-8b5e-85afe693a895
+checkSum:	3
+[Tue Dec 28 2021 17:02:42 GMT+0300 (Москва, стандартное время)] d30c4b2067e611ec8b5e85afe693a895
+[Tue Dec 28 2021 17:02:42 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	d30c4b20-67e6-11ec-8b5e-85afe693a895
+checkSum:	5
+[Tue Dec 28 2021 17:03:44 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:03:48 GMT+0300 (Москва, стандартное время)] No ApplicatinNumber in database...
+[Tue Dec 28 2021 17:03:48 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:03:48 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	fa934fe0-67e6-11ec-824f-c1ba2dab9955
+checkSum:	e
+[Tue Dec 28 2021 17:03:48 GMT+0300 (Москва, стандартное время)] fa934fe067e611ec824fc1ba2dab9955
+[Tue Dec 28 2021 17:04:40 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:04:41 GMT+0300 (Москва, стандартное время)] No ApplicatinNumber in database...
+[Tue Dec 28 2021 17:04:41 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:04:41 GMT+0300 (Москва, стандартное время)] 1a0c902067e711ecb7a17937e4a9f3a6
+[Tue Dec 28 2021 17:04:41 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	1a0c9020-67e7-11ec-b7a1-7937e4a9f3a6
+checkSum:	b
+[Tue Dec 28 2021 17:06:04 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where ApplicationNumber = 'test1'
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] No ApplicatinNumber in database...
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] 4c98c77067e711ecadb31f43996088e7
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	4c98c770-67e7-11ec-adb3-1f43996088e7
+checkSum:	2
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] QUERY: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','4c98c770-67e7-11ec-adb3-1f43996088e7-2')
+[Tue Dec 28 2021 17:06:06 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:08:52 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] No ApplicatinNumber in database...
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] b1ec434067e711ecade7cfcb54b7628a
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	b1ec4340-67e7-11ec-ade7-cfcb54b7628a
+checkSum:	e
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:08:56 GMT+0300 (Москва, стандартное время)] QUERY: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','b1ec4340-67e7-11ec-ade7-cfcb54b7628a-e')
+[Tue Dec 28 2021 17:09:50 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] No applicatoinNumber in database...
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] d3c14dd067e711ec862b59272866bb58
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	d3c14dd0-67e7-11ec-862b-59272866bb58
+checkSum:	0
+[Tue Dec 28 2021 17:09:52 GMT+0300 (Москва, стандартное время)] QUERY: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','d3c14dd0-67e7-11ec-862b-59272866bb58-0')
+[Tue Dec 28 2021 17:10:30 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:10:31 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:10:31 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:11:14 GMT+0300 (Москва, стандартное время)] QUERY: DROP TABLE IF EXISTS UUIDS
+[Tue Dec 28 2021 17:11:14 GMT+0300 (Москва, стандартное время)] QUERY: CREATE TABLE UUIDS (applicationNumber character varying(50),creditNumber character varying (50),UUID character varying(38))
+[Tue Dec 28 2021 17:11:18 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:11:22 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:12:16 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:12:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:13:39 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] No applicatoinNumber in database...
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] 5c6ec68067e811ec8283d1da24304b53
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	5c6ec680-67e8-11ec-8283-d1da24304b53
+checkSum:	e
+[Tue Dec 28 2021 17:13:42 GMT+0300 (Москва, стандартное время)] QUERY: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test1','undefined','5c6ec680-67e8-11ec-8283-d1da24304b53-e')
+[Tue Dec 28 2021 17:13:53 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:13:53 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:14:15 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:14:15 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:14:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:14:18 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:14:52 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:14:55 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:14:55 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:15 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:15:17 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:17 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:18 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:18 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:18 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:20 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:21 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:21 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:21 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:15:21 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:15:24 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:15:24 GMT+0300 (Москва, стандартное время)] No applicatoinNumber in database...
+[Tue Dec 28 2021 17:15:24 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 17:15:24 GMT+0300 (Москва, стандартное время)] Found by creditNumber
+[Tue Dec 28 2021 17:16:03 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] No applicatoinNumber in database...
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where creditNumber = 'undefined'
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] No creditNumber in database...
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] b27e7bb067e811eca8ffa9276a509252
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	b27e7bb0-67e8-11ec-a8ff-a9276a509252
+checkSum:	9
+[Tue Dec 28 2021 17:16:06 GMT+0300 (Москва, стандартное время)] QUERY: Insert into UUIDS(applicationNumber,creditNumber,UUID) values('test2','undefined','b27e7bb0-67e8-11ec-a8ff-a9276a509252-9')
+[Tue Dec 28 2021 17:16:12 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:16:12 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:14 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:16:14 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:14 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:16:14 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:15 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:16:15 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:15 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test2'
+[Tue Dec 28 2021 17:16:15 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:16:18 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:18 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:16:18 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:16:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:16:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:16:19 GMT+0300 (Москва, стандартное время)] QUERY: select * from UUIDS where applicationNumber = 'test1'
+[Tue Dec 28 2021 17:16:19 GMT+0300 (Москва, стандартное время)] Found by applicationNumber
+[Tue Dec 28 2021 17:17:19 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:17:21 GMT+0300 (Москва, стандартное время)] -- Found by applicationNumber
+[Tue Dec 28 2021 17:17:31 GMT+0300 (Москва, стандартное время)] -- No applicatoinNumber in database...
+[Tue Dec 28 2021 17:17:31 GMT+0300 (Москва, стандартное время)] -- No creditNumber in database...
+[Tue Dec 28 2021 17:17:31 GMT+0300 (Москва, стандартное время)] e51fc1a067e811ecb054555be34a99ca
+[Tue Dec 28 2021 17:17:31 GMT+0300 (Москва, стандартное время)] getBKIUUID:
+UUID:	e51fc1a0-67e8-11ec-b054-555be34a99ca
+checkSum:	9
+[Tue Dec 28 2021 17:19:09 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:19:12 GMT+0300 (Москва, стандартное время)] Request:
+[Tue Dec 28 2021 17:19:12 GMT+0300 (Москва, стандартное время)] -- Found by applicationNumber
+[Tue Dec 28 2021 17:19:17 GMT+0300 (Москва, стандартное время)] Request:
+[Tue Dec 28 2021 17:19:17 GMT+0300 (Москва, стандартное время)] -- No applicatoinNumber in database...
+[Tue Dec 28 2021 17:19:17 GMT+0300 (Москва, стандартное время)] -- No creditNumber in database...
+[Tue Dec 28 2021 17:20:17 GMT+0300 (Москва, стандартное время)] Express fired on port 3000
+[Tue Dec 28 2021 17:20:19 GMT+0300 (Москва, стандартное время)] Request:
+[Tue Dec 28 2021 17:20:19 GMT+0300 (Москва, стандартное время)] -- Found by applicationNumber
+[Tue Dec 28 2021 17:20:28 GMT+0300 (Москва, стандартное время)] Request:
+[Tue Dec 28 2021 17:20:28 GMT+0300 (Москва, стандартное время)] -- No applicatoinNumber in database...
+[Tue Dec 28 2021 17:20:28 GMT+0300 (Москва, стандартное время)] -- No creditNumber in database...

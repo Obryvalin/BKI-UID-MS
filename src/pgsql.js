@@ -1,6 +1,6 @@
 const {Pool} = require("pg");
 const fs = require("fs");
-
+const log = require('./log')
 
 
 const pgoptions = JSON.parse(fs.readFileSync("conf/pg.json").toString());
@@ -8,11 +8,11 @@ const pgoptions = JSON.parse(fs.readFileSync("conf/pg.json").toString());
 pool = new Pool(pgoptions);
 
 const query = (sql,callback)=>{
-//    console.log ("QUERY: "+sql);
+   // log.timestamp ("QUERY: "+sql);
     pool.query(sql,(err,res)=>{
         if (err){
-            console.log("PG error: "+ sql);
-            console.log(err);
+            log.timestamp("PG error: "+ sql);
+            log.timestamp(err);
             if (callback){callback(err,undefined)}
 
         }
@@ -25,11 +25,18 @@ const query = (sql,callback)=>{
 
 };
 
-
+const init = (callback)=>{
+    query("DROP TABLE IF EXISTS UUIDS",()=>{
+        query("CREATE TABLE UUIDS (applicationNumber character varying(50),creditNumber character varying (50),UUID character varying(38))",()=>{
+            log.timestamp("Init complete");
+            callback();
+        })
+    })
+}
 
 
 module.exports = {
     query,
-    
+    init
     
 }
