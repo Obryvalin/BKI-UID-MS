@@ -1,0 +1,18 @@
+{
+  "name": "uuid-ms",
+  "version": "1.0.0",
+  "description": "Генерация УИД обращений и сделок в соответствии с 758-П п.2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm run test"
+  },
+  "author": "Ilya Obryvalin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jest": "^27.1.1",
+    "pg": "^8.7.1",
+    "uuid": "^8.3.2"
+  }
+}
